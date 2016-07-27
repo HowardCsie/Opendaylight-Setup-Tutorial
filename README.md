@@ -5,11 +5,15 @@
 A tutorial on setting up the whole virtual invironment for OpendayLight SDN controller.
 
 
+
+
 ## Install OpendayLight SDN Controller
 [Download](https://www.opendaylight.org/downloads) through your browser or use ```wget``` in your terminal.
 ```
 wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
 ```
+
+
 
 ## Install Git
  Centos 7
