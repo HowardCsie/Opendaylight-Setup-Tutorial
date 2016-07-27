@@ -2,22 +2,21 @@
 
 # Welcome to OpendayLight
 
-A tutorial on setting up the whole virtual invironment.
+A tutorial on setting up the whole virtual invironment for OpendayLight SDN controller.
 
-## Features
 
-- [x] Fully Configurable UI Components
-- [x] Grid System For Complex UIs
-- [x] Layout Library To Simplify AutoLayout
-- [x] Base Material Layers & Material Views To Create New UI Components
-- [x] Navigation Controls
-- [x] Material Buttons
-- [x] Material Switch
-- [x] Material Card Views
-- [x] Material Icons
-- [x] Menu Toolset To Create Animated Menus
-- [x] Camera / Video Extension With Extensive Functionality
-- [x] Animation Extension To Create Intricate Animations
-- [x] Complete Material Color Library
-- [x] Example Projects
-- [x] And More...
+## Install OpendayLight SDN Controller
+[Download](https://www.opendaylight.org/downloads) through your browser or use ```wget``` in your terminal.
+```
+wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
+```
+
+## Install Git
+ Centos 7
+```
+sudo yum -y install git
+```
+ Ubuntu 14.04
+```
+sudo apt-get install git
+```
