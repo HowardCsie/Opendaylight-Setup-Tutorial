@@ -1,10 +1,8 @@
-![Material](http://www.cosmicmind.io/MK/Material.png)
+![logo-2](https://cloud.githubusercontent.com/assets/17197816/17171275/881cfd40-5422-11e6-9820-4eb7998923ff.png)
 
-# Welcome to Material
+# Welcome to OpendayLight
 
-An animation and graphics framework for Material Design in Swift.
-
-![App](http://www.cosmicmind.io/gifs/App.gif)
+A tutorial on setting up the whole virtual invironment.
 
 ## Features
 
