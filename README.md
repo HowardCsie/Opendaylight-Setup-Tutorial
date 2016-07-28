@@ -8,10 +8,22 @@ A tutorial on setting up the whole virtual invironment for OpendayLight SDN cont
 
 
 ## Install OpendayLight SDN Controller
-[Download](https://www.opendaylight.org/downloads) through your browser or use ```wget``` in your terminal.(Note:following is the latest version.)
+[Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
 ```
 wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
 ```
+Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
+```
+unzip distribution-karaf-0.4.2-Beryllium-SR2.zip
+cd distribution-karaf-0.4.2-Beryllium-SR2
+./bin/karaf
+```
+Use ```version``` to check the version.
+```
+opendaylight-user@root>version
+3.0.3
+```
+
 
 
 
