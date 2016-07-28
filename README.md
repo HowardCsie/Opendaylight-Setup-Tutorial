@@ -161,10 +161,6 @@ Check all the components ```feature:list```
 
 Check installed components ```feature:list -i```
 #### Use web browser to login OpenDaylight SDN Controller
-http://controller-ip:8181/index.html
-
-account:admin
-
-password:admin
+http://controller-ip:8181/index.html               account:admin password:admin
 
 
