@@ -214,3 +214,6 @@ root@user:~# ovs-vsctl: no row "YOUR-SWITCH-NAME" in table Bridge
 http://www.sflow-rt.com/download.php
 ```
 Download all the applications you want , copy files to the sFlow-RT app directory and restart to install.
+
+# Conclusion
+Please feel free to send me a pull request if you wanna contribute:)
