@@ -161,6 +161,56 @@ Check all the components ```feature:list```
 
 Check installed components ```feature:list -i```
 #### Use web browser to login OpenDaylight SDN Controller
-http://controller-ip:8181/index.html               account:admin password:admin
-
-
+http://controller-ip:8181/index.html              
+```
+account:admin
+password:admin
+```
+<img width="1280" alt="opendaylight" src="https://cloud.githubusercontent.com/assets/17197816/17204006/7a4c4eec-54d5-11e6-8ac9-ad54fe744f30.png">
+if login fails,check firewall or reinstall components.
+#### Check if Mininet,Ovs and SDN Controller is properly installed
+```
+root@user:~# sudo mn --topo single,3 --mac --switch ovsk,protocols=OpenFlow13 --controller remote
+mininet>pingall
+*** Ping: testing ping reachability
+h1 -> h2 h3
+h2 -> h1 h3
+h3 -> h1 h2
+*** Results: 0% dropped (6/6 received)
+```
+Go to http://controller-ip:8181/index.html and reload the topology,there should be a one-switch-three-host topology.
+## Install Iperf3
+```
+sudo yum -y install epel-release
+sudo yum -y install iperf3
+```
+## Install sFlow-RT
+Note:sFlow-RT requires Java 1.7+
+#### Download and start
+```
+wget http://www.inmon.com/products/sFlow-RT/sflow-rt.tar.gz
+tar -xvzf sflow-rt.tar.gz
+cd sflow-rt
+./start.sh
+```
+#### Use web browser to check if sFlow is working
+```
+http://ip:8008
+```
+#### Set sFlow agent on openvswitch
+```
+sudo ovs-vsctl -- --id=@sflow create sflow agent=eth0 target=\"127.0.0.1:6343\" sampling=2 polling=20 -- -- set bridge YOUR-SWITCH-NAME sflow=@sflow
+```
+Success
+```
+root@user:~# ed495ce3-50b5-46b4-af1d-97510305ceca
+```
+faiure
+```
+root@user:~# ovs-vsctl: no row "YOUR-SWITCH-NAME" in table Bridge
+```
+#### Install applications
+```
+http://www.sflow-rt.com/download.php
+```
+Download all the applications you want , copy files to the sFlow-RT app directory and restart to install.
