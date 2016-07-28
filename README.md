@@ -15,17 +15,14 @@ Virtual switch | Open vSwitch 2.3.3
 Network trafic generation | iperf or iperf3
 Traffic monitoring | sFlow-RT
 
-
-
-
 ## Installation
 
 ### Install OpendayLight SDN Controller
-[Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
+####[Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
 ```
 wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
 ```
-Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
+####Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
 ```
 unzip distribution-karaf-0.4.2-Beryllium-SR2.zip
 cd distribution-karaf-0.4.2-Beryllium-SR2
@@ -36,9 +33,19 @@ Use ```version``` to check the version.
 opendaylight-user@root>version
 3.0.3
 ```
+####Install controller components
+Reference:https://www.opendaylight.org/software/downloads/beryllium-sr2
+```
+opendaylight-user@root>feature:install odl-mdsal-clustering
+opendaylight-user@root>feature:install odl-restconf
+opendaylight-user@root>feature:install odl-l2switch-switch
+opendaylight-user@root>feature:install odl-openflowplugin-all
+opendaylight-user@root>feature:install odl-dlux-all
+opendaylight-user@root>feature:install odl-mdsal-all
+```
+Attension: odl-mdsal-clustering must be the first one installed
 
-
-
+Advisement: Install components one by one
 
 ### Install Git
  Centos 7
