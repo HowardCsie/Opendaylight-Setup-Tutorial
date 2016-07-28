@@ -16,7 +16,15 @@ Network trafic generation | iperf or iperf3
 Traffic monitoring | sFlow-RT
 
 # Installation
-
+## Install Git
+### Ubuntu 14.04
+```
+sudo apt-get -y install git
+```
+### Centos 7
+```
+sudo yum -y install git
+```
 ## Install Mininet
 ### Ubuntu 14.04
 #### Run the sript and all things finish automatically:)))
@@ -152,14 +160,11 @@ Advisement: Install odl-mdsal-clustering first then install other components one
 Check all the components ```feature:list```
 
 Check installed components ```feature:list -i```
+#### Use web browser to login OpenDaylight SDN Controller
+http://controller-ip:8181/index.html
 
-## Install Git
-### Ubuntu 14.04
-```
-sudo apt-get -y install git
-```
-### Centos 7
-```
-sudo yum -y install git
-```
+account:admin
+
+password:admin
+
 
