@@ -17,12 +17,22 @@ Traffic monitoring | sFlow-RT
 
 # Installation
 
+## Install Mininet
+### Ubuntu 14.04
+ ```
+ ./install_mininet.sh
+ ```
+Run the sript and all things finish automatically:)))
+### Centos 7
+ 
+ 
+
 ## Install OpendayLight SDN Controller
-####[Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
+#### [Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
 ```
 wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
 ```
-####Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
+#### Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
 ```
 unzip distribution-karaf-0.4.2-Beryllium-SR2.zip
 cd distribution-karaf-0.4.2-Beryllium-SR2
@@ -33,7 +43,7 @@ Use ```version``` to check the version.
 opendaylight-user@root>version
 3.0.3
 ```
-####Install controller components
+#### Install controller components
 Reference:https://www.opendaylight.org/software/downloads/beryllium-sr2
 ```
 opendaylight-user@root>feature:install odl-mdsal-clustering
@@ -50,11 +60,12 @@ Check all the components ```feature:list```
 Check installed components ```feature:list -i```
 
 ## Install Git
- Centos 7
+### Ubuntu 14.04
+```
+sudo apt-get -y install git
+```
+### Centos 7
 ```
 sudo yum -y install git
 ```
- Ubuntu 14.04
-```
-sudo apt-get install git
-```
+
