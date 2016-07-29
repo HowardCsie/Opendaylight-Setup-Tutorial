@@ -215,5 +215,9 @@ http://www.sflow-rt.com/download.php
 ```
 Download all the applications you want , copy files to the sFlow-RT app directory and restart to install.
 
+# Restful API
+I use [Postman](https://www.getpostman.com) to send requests :) Download the Mac app or install the Chrome extension.
+## Authorisation setting
+
 # Conclusion
 Please feel free to send me a pull request if you wanna contribute:)
