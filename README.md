@@ -217,7 +217,21 @@ Download all the applications you want , copy files to the sFlow-RT app director
 
 # Restful API
 I use [Postman](https://www.getpostman.com) to send requests :) Download the Mac app or install the Chrome extension.
-## Authorisation setting
+## Setup
+#### Authorisation setting
+1. Type -> select ```Basic Auth```
+2. Username and Password -> both ```admin``` as default
+3. Check ```Save helper data to request```
+4. Click ```Update Request``` button
+
+<img width="899" alt="2016-07-29 16 40 44" src="https://cloud.githubusercontent.com/assets/17197816/17242807/d11e1bde-55ab-11e6-9cad-221515a09a03.png">
+#### Header setting
+1. There should be a key-value there ```Authorization Basic YWRtaW46YWRtaW4=``` because of previous step.
+2. Add a new key called ```Content-Type``` ,then determine what kind of format you prefer. e.g. ```application/json```
+3. Add a new key called ```Accept``` ,then determine what kind of format you prefer. e.g. ```application/json```
+4. Ready to go :))))
+
+<img width="897" alt="2016-07-29 16 42 26" src="https://cloud.githubusercontent.com/assets/17197816/17242806/d11c9516-55ab-11e6-95af-472eb76a8db5.png">
 
 # Conclusion
 Please feel free to send me a pull request if you wanna contribute:)
