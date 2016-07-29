@@ -225,7 +225,7 @@ I use [Postman](https://www.getpostman.com) to send requests :) Download the Mac
 4. Click ```Update Request``` button
 
 <img width="899" alt="2016-07-29 16 40 44" src="https://cloud.githubusercontent.com/assets/17197816/17242807/d11e1bde-55ab-11e6-9cad-221515a09a03.png">
-#### Header setting
+#### Headers setting
 1. There should be a key-value there ```Authorization Basic YWRtaW46YWRtaW4=``` because of previous step.
 2. Add a new key called ```Content-Type``` ,then determine what kind of format you prefer. e.g. ```application/json```
 3. Add a new key called ```Accept``` ,then determine what kind of format you prefer. e.g. ```application/json```
