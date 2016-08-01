@@ -249,7 +249,7 @@ get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/no
 #### Get flow entries information in specific table
 Method | URL
 :---: | --- 
-get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/opendaylight-flow-statistics:aggregate-flow-statistics
+get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/table/0
 
 #### Get specific flow entry information
 Method | URL
