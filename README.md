@@ -241,7 +241,7 @@ Method | URL
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1
 + Note:```openflow:1```is my demo node(switch) id, please revise to yours.
 
-#### Get specific table information
+#### Get specific table statistics
 Method | URL
 :---: | --- 
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/flow-node-inventory:table/0/opendaylight-flow-table-statistics:flow-table-statistics
