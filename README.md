@@ -7,7 +7,7 @@ A tutorial on setting up the whole virtual invironment for OpendayLight SDN cont
 # Environment
 
 Category | Detail
---- | --- | ---
+--- | --- 
 OS | Centos 7 or Ubuntu 14.04
 SDN Controller | OpendayLight Beryllium-SR2
 Virtual network | Mininet 2.2.1
@@ -232,6 +232,14 @@ I use [Postman](https://www.getpostman.com) to send requests :) Download the Mac
 4. Ready to go :))))
 
 <img width="897" alt="2016-07-29 16 42 26" src="https://cloud.githubusercontent.com/assets/17197816/17242806/d11c9516-55ab-11e6-95af-472eb76a8db5.png">
+
+
+## API List
+#### Get specific node(switch) information
+Method | URL
+:---: | --- 
+get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1
++ Note:```openflow:1```is my demo node(switch) id, please revise to yours.
 
 # Conclusion
 Please feel free to send me a pull request if you wanna contribute:)
