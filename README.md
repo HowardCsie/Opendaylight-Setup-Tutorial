@@ -255,7 +255,7 @@ get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/no
 Method | URL
 :---: | --- 
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
-+ Note : if your flow id look like this ```#UF$TABLE*0-1``` , use [URL encoding](http://www.url-encode-decode.com) to convert to ```%23UF%24TABLE%2A0-1```
++ Note : if your flow id look like this ```#UF$TABLE*0-1``` , use [URL encoding](http://www.url-encode-decode.com) for converting flow id to ```%23UF%24TABLE%2A0-1```
 
 
 # Conclusion
