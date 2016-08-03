@@ -257,6 +257,44 @@ Method | URL
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
 + Note : if your flow id look like this ```#UF$TABLE*0-1``` , use [URL encoding](http://www.url-encode-decode.com) for converting flow id to ```%23UF%24TABLE%2A0-1```
 
+#### Add / Edit flow entries
+Method | URL
+:---: | --- 
+put | http://127.0.0.1:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
+request body:
+```
+{
+  "flow": [
+    {
+      "id": "1",
+      "table_id": 0,
+      "match": {
+        "in-port": "openflow:1:3"
+      },
+      "instructions": {
+        "instruction": [
+          {
+            "order": 0,
+            "apply-actions": {
+              "action": [
+                {
+                  "order": 0,
+                  "output-action": {
+                    "output-node-connector": "CONTROLLER",
+                    "max-length": 65535
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "priority": 20
+    }
+  ]
+}
+```
+
 
 # Conclusion
 Please feel free to send me a pull request if you wanna contribute:)
