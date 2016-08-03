@@ -257,10 +257,13 @@ Method | URL
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
 + Note : if your flow id look like this ```#UF$TABLE*0-1``` , use [URL encoding](http://www.url-encode-decode.com) for converting flow id to ```%23UF%24TABLE%2A0-1```
 
-#### Add / Edit flow entries
+#### Add / Edit flow entry
 Method | URL
 :---: | --- 
 put | http://127.0.0.1:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
+
+<img width="897" alt="2016-08-03 11 38 47" src="https://cloud.githubusercontent.com/assets/17197816/17353087/015db32e-596f-11e6-965a-9d298de3cd77.png">
+
 request body:
 ```
 {
@@ -294,7 +297,10 @@ request body:
   ]
 }
 ```
-
+#### Delete flow entry
+Method | URL
+:---: | --- 
+delete | http://127.0.0.1:8181/restconf/config/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
 
 # Conclusion
 Please feel free to send me a pull request if you wanna contribute:)
