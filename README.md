@@ -239,7 +239,7 @@ I use [Postman](https://www.getpostman.com) to send requests :) Download the Mac
 Method | URL
 :---: | --- 
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1
-+ Note:```openflow:1```is my demo node(switch) id, please revise to yours.
++ Note : ```openflow:1```is my demo node(switch) id, please revise to yours.
 
 #### Get specific table statistics
 Method | URL
@@ -255,6 +255,7 @@ get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/no
 Method | URL
 :---: | --- 
 get | http://127.0.0.1:8181/restconf/operational/opendaylight-inventory:nodes/node/openflow:1/table/0/flow/1
++ Note : if your flow id look like this ```#UF$TABLE*0-1``` , use [URL encoding](http://www.url-encode-decode.com) to convert to ```%23UF%24TABLE%2A0-1```
 
 
 # Conclusion
