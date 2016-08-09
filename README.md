@@ -132,12 +132,12 @@ completed in 5.125 seconds
 ## Install OpendayLight SDN Controller
 #### [Download](https://www.opendaylight.org/downloads) through web browser or use ```wget``` in terminal. (Note:following is currently the latest version.)
 ```
-wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.2-Beryllium-SR2/distribution-karaf-0.4.2-Beryllium-SR2.zip
+wget https://nexus.opendaylight.org/content/groups/public/org/opendaylight/integration/distribution-karaf/0.4.3-Beryllium-SR3/distribution-karaf-0.4.3-Beryllium-SR3.zip
 ```
 #### Unzip the pre-built zip file (Place anywhere you want.) and run SDN Controller
 ```
-unzip distribution-karaf-0.4.2-Beryllium-SR2.zip
-cd distribution-karaf-0.4.2-Beryllium-SR2
+unzip distribution-karaf-0.4.3-Beryllium-SR3.zip
+cd distribution-karaf-0.4.3-Beryllium-SR3
 ./bin/karaf
 ```
 Use ```version``` to check the version.
