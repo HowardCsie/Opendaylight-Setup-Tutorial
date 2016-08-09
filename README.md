@@ -161,7 +161,7 @@ Check all the components ```feature:list```
 
 Check installed components ```feature:list -i```
 
-Note: L2Switch Main (58-l2switchmain.xml)
+##### Note: L2Switch Main (58-l2switchmain.xml)
 
 • is-install-dropall-flow
 
