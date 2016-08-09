@@ -160,6 +160,15 @@ Advisement: Install odl-mdsal-clustering first then install other components one
 Check all the components ```feature:list```
 
 Check installed components ```feature:list -i```
+
+Note: L2Switch Main (58-l2switchmain.xml)
+
+• is-install-dropall-flow
+
+```true``` means a drop-all flow will be installed on each switch, so the default action will be to drop a packet instead of sending it to the controller
+
+```false``` means this flow will not be installed
+
 #### Use web browser to login OpenDaylight SDN Controller
 http://controller-ip:8181/index.html              
 ```
