@@ -318,6 +318,7 @@ request body:
    ]
 }
 ```
+[Reference](https://wiki.opendaylight.org/view/Editing_OpenDaylight_OpenFlow_Plugin:End_to_End_Flows:Example_Flows#Output_to_TABLE)
 #### Delete flow entry
 Method | URL
 :---: | --- 
