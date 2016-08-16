@@ -276,34 +276,46 @@ put | http://127.0.0.1:8181/restconf/config/opendaylight-inventory:nodes/node/op
 request body:
 ```
 {
-  "flow": [
-    {
-      "id": "1",
-      "table_id": 0,
-      "match": {
-        "in-port": "openflow:1:3"
-      },
-      "instructions": {
-        "instruction": [
-          {
-            "order": 0,
-            "apply-actions": {
-              "action": [
-                {
-                  "order": 0,
-                  "output-action": {
-                    "output-node-connector": "CONTROLLER",
-                    "max-length": 65535
+   "flow":[
+      {
+         "id":"1",
+         "table_id":0,
+         "match":{
+            "ethernet-match":{
+               "ethernet-type":{
+                  "type":2048
+               }
+            },
+            "ipv4-source":"8.8.8.8/24",
+            "in-port":"openflow:1:3"
+         },
+         "instructions":{
+            "instruction":[
+               {
+                  "order":0,
+                  "apply-actions":{
+                     "action":[
+                        {
+                           "order":0,
+                           "output-action":{
+                              "output-node-connector":"CONTROLLER",
+                              "max-length":65535
+                           }
+                        },
+                        {
+                           "order":1,
+                           "drop-action":{
+
+                           }
+                        }
+                     ]
                   }
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "priority": 20
-    }
-  ]
+               }
+            ]
+         },
+         "priority":20
+      }
+   ]
 }
 ```
 #### Delete flow entry
