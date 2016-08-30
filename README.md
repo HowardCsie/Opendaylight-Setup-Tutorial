@@ -169,6 +169,25 @@ Check installed components ```feature:list -i```
 
 ```false``` means this flow will not be installed
 
+##### Note: Enabling the ODL Controller's Host Tracker No Flood Hybrid Mode (54-arphandler.xml)
+
+• is-proactive-flood-mode
+
+```true``` means that flood flows will be installed on each switch. With this flood flow, each switch will flood a packet that doesn't match any other flows.
+
+Advantage: Fewer packets are sent to the controller because those packets are flooded to the network.
+
+Disadvantage: A lot of network traffic is generated.
+
+```false``` means the previously mentioned flood flows will not be installed. Instead an ARP flow will be installed on each switch that sends all ARP packets to the controller.
+
+Advantage: Less network traffic is generated.
+
+Disadvantage: The controller handles more packets (ARP requests & replies) and the ARP process takes longer than if there were flood flows.
+
+• is-hybrid-mode
+
+
 #### Use web browser to login OpenDaylight SDN Controller
 http://controller-ip:8181/index.html              
 ```
